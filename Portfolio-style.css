@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+.nova-round-regular {
+  font-family: "Nova Round", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+*{
+	margin:0;
+}
+
+body {
+	background-image: url("img/Adobe Gradient.jpeg"); /*the image used*/
+	background-color: #8A697E; /*used if image is unavailable*/
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+
+header {
+	display:flex;
+	flex-wrap: wrap;
+	position: sticky;
+	margin: 25px;
+	padding: 0px;
+}
+.logo {
+	flex: 1 1 750px;
+	background-color: #3D2A48;
+	padding: 15px;
+}
+
+.logo h1 {
+	color: white; 
+	font-family: "megrim", "sans-serif";
+	font-weight: 400;
+	font-size: 50px;
+	text-align: left;
+}
+nav {
+	flex: 1 1 450px;
+	flex-direction: column;
+	background-color: rgba(255,240,253,0.30);
+	justify-content: center;
+	align-items: center;
+	
+}
+.menu-om, .menu-projekter, .menu-kontakt  {
+	height: 25px;
+	width: 100px;
+	background-color: #3D2A48;
+	margin: 10px; 
+	padding: 10px;
+	border-radius: 5px;
+	justify-content: center;
+	
+}
+nav h3 {
+	color: white;
+	font-family: "Nova Round", system-ui;
+  	font-weight: 400;
+  	font-style: normal;
+	text-align: center;
+}
+
+
+
+	
