@@ -16,40 +16,63 @@ body {
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;}
+h1 {
+	font-family: "megrim", "sans-serif";
+	font-weight: 400;}
+h2 {
+	font-family: "Nova Round", system-ui;
+  	font-weight: 400;
+	font-size: 24px;
+	font-style: normal;}
+h3 {
+	font-family: "Nova Round", system-ui;
+  	font-weight: 400;
+	font-size: 17px;
+	font-style: normal;}
+h4 {
+	font-family: "Nova Round", system-ui;
+  	font-weight: 400;
+	font-size: 15px;
+	font-style: normal;}
+
+p {
+	
+}
+
+/*HEADER*/
 
 header {
 	display:flex;
+	flex-wrap: nowrap;
 	position: sticky;
 	height: 85px;
 	margin: 20px 40px;
 	padding: 0px;
 	justify-content: center;}
 .logo {
+	display:flex;
 	flex: 0 1 56%;
-	background-color: #3D2A48;
+	max-width: 56%;
+	background-color: #3D2A48; /*Dark Purple*/
 	padding: 5px;}
 .logo h1 {
 	color: white; 
-	font-family: "megrim", "sans-serif";
-	font-weight: 400;
 	font-size: 65px;
 	text-align: left;
 	margin-left: 25px;}
 nav {
 	display:flex;
 	flex: 0 1 32%;
+	min-width: 350px;
 	flex-direction: row;
 	background-color: rgba(255,240,253,0.30);
 	justify-content:center;
 	align-items: center;}
 nav h3 {
 	color: white;
-	font-family: "Nova Round", system-ui;
-  	font-weight: 400;
-	font-size: 17px;
-  	font-style: normal;
 	height: 30px;
 	width: 100px;
+	min-width: 100px;
 	background-color: #3D2A48;
 	margin: 5px; 	
 	padding-top: 10px;
@@ -61,22 +84,89 @@ nav h3 {
 	margin-right: 20px;}
 
 	
+/*main*/
 
-@media screen and (max-width: 900px){
+main {
+	display:flex;
+	position: sticky;
+	
+	height: 100%;
+	margin: 20px 40px;
+	padding: 0px;
+	justify-content: center;}
+
+.left-section {
+	display:flex;
+	flex-wrap: wrap;
+	flex: 0 1 32%;
+	min-width: 300px;
+	background-color: rgba(255,240,253,0.30);
+	flex-direction: row;
+	
+	border-right: solid #3D2A48 5px}
+.subject {
+	display: flex;
+	background-color: rgba(255,240,253,0.70);
+	height: 85px;
+	width: 100%;
+	margin: 20px;
+	justify-content: center;}
+.subject-1 {
+	color: black;
+	text-align: center;
+	margin-top: 25px}
+.subject-2 {
+	color: black;
+	text-align: center;
+	margin-top: 15px}
+.subject-description {
+	color: white;
+	background-color: #3D2A48;
+	height: 400px;
+	width: 100%;
+	margin: 0px 20px 20px 20px;
+	padding: 20px;
+	text-align: center;}
+
+.right-section {
+	display:flex;
+	flex-wrap: nowrap;
+	flex: 1 1 56%;
+	max-width: 56%;
+	height: 400px;
+	flex-direction: row;
+	background-color: rgba(255,240,253,0.30);}
+.text {
+	display: flex;
+	background-color: rgba(255,240,253,0.70);
+	height: 75%;
+	width: 100%;
+	margin: 20px;
+	justify-content: center;
+	color: black;
+	padding: 20px;}
+	
+
+
+@media screen and (max-width: 900px){ 
 
 header {
 	display:flex;
-	flex-wrap: wrap;}
+	flex-wrap: wrap}
 .logo {
-	flex: 1 1 100%;}
+	flex: 1 1 100%;
+	max-width: 100%;}
 .logo h1 {
 	text-align: center;}	
 nav {
 	flex: 1 1 100%;
+	max-width: 100%;
 	height: 85px;}
 nav h3 {
 	height: 30px;
 	width: 120px;}
+main {
+	margin-top: 100px;}
 }
 
 @media screen and (max-width: 700px){
@@ -84,3 +174,5 @@ nav h3 {
 header {
 	margin: 20px;}
 }
+
+
