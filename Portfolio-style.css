@@ -1,13 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
-.nova-round-regular {
-  font-family: "Nova Round", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
 *{
-	margin:0;
-}
+	margin:0;}
 
 body {
 	background-image: url("img/Adobe Gradient.jpeg"); /*the image used*/
@@ -15,10 +9,12 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
-	background-size: cover;}
+	background-size: cover;
+	justify-content: center;}
 h1 {
 	font-family: "megrim", "sans-serif";
-	font-weight: 400;}
+	font-weight: 400;
+	font-size:65px;}
 h2 {
 	font-family: "Nova Round", system-ui;
   	font-weight: 400;
@@ -34,9 +30,11 @@ h4 {
   	font-weight: 400;
 	font-size: 15px;
 	font-style: normal;}
-
 p {
-	
+	font-family:  'Lucida Sans', 'Lucida Sans Unicode', 'DejaVu Sans','Lucida Grande', Verdana, 'sans-serif';
+	font-weight: 400;
+	font-size: 12px;
+	font-style: normal;
 }
 
 /*HEADER*/
@@ -46,27 +44,24 @@ header {
 	flex-wrap: nowrap;
 	position: sticky;
 	height: 85px;
-	margin: 20px 40px;
-	padding: 0px;
-	justify-content: center;}
+	margin: 20px 80px;}
 .logo {
 	display:flex;
-	flex: 0 1 56%;
-	max-width: 56%;
+	flex-wrap:nowrap;
+	flex: 1 1 56%;
 	background-color: #3D2A48; /*Dark Purple*/
 	padding: 5px;}
 .logo h1 {
 	color: white; 
-	font-size: 65px;
 	text-align: left;
-	margin-left: 25px;}
+	margin-left: 20px;}
 nav {
 	display:flex;
-	flex: 0 1 32%;
+	flex: 1 1 32%;
 	min-width: 350px;
 	flex-direction: row;
 	background-color: rgba(255,240,253,0.30);
-	justify-content:center;
+	justify-content: space-around;
 	align-items: center;}
 nav h3 {
 	color: white;
@@ -87,66 +82,63 @@ nav h3 {
 /*main*/
 
 main {
-	display:flex;
-	position: sticky;
-	
-	height: 100%;
-	margin: 20px 40px;
-	padding: 0px;
-	justify-content: center;}
-
-.left-section {
-	display:flex;
-	flex-wrap: wrap;
-	flex: 0 1 32%;
-	min-width: 300px;
-	background-color: rgba(255,240,253,0.30);
-	flex-direction: row;
-	
-	border-right: solid #3D2A48 5px}
-.subject {
 	display: flex;
-	background-color: rgba(255,240,253,0.70);
+	flex-wrap: nowrap;
+	flex-direction: row;
+	background-color: rgba(255,240,253,0.30);
+	position: sticky; 
+	margin: 20px 80px;}
+section {
+	display:flex;
+	flex: 1 1 100%;}
+.left-section {
+	flex-wrap: wrap;
+	min-width: 200px;
+	max-width: 350px;
+	border-right: solid #3D2A48 5px;
+	text-align: center;}
+
+.box-headline {
+	display: flex;
 	height: 85px;
 	width: 100%;
 	margin: 20px;
-	justify-content: center;}
+	background-color: rgba(255,240,253,0.70);
+	color: black;
+	justify-content: center;
+	text-align: center;}
 .subject-1 {
-	color: black;
-	text-align: center;
-	margin-top: 25px}
+	margin-top: 25px;}
 .subject-2 {
-	color: black;
-	text-align: center;
-	margin-top: 15px}
-.subject-description {
+	display:flex;
+	flex-direction: column;
+	margin-top: 15px;}
+.box-description {
+	display: flex;
+	flex-direction: column;
+	max-width: 100%;
 	color: white;
 	background-color: #3D2A48;
-	height: 400px;
-	width: 100%;
 	margin: 0px 20px 20px 20px;
-	padding: 20px;
-	text-align: center;}
-
-.right-section {
-	display:flex;
-	flex-wrap: nowrap;
-	flex: 1 1 56%;
-	max-width: 56%;
-	height: 400px;
-	flex-direction: row;
-	background-color: rgba(255,240,253,0.30);}
-.text {
+	padding: 20px;	}
+.box-text {
 	display: flex;
-	background-color: rgba(255,240,253,0.70);
-	height: 75%;
-	width: 100%;
+	flex-direction: column;
+	flex: 1 1 100%;
 	margin: 20px;
-	justify-content: center;
+	padding: 20px;
 	color: black;
-	padding: 20px;}
+	background-color: rgba(255,240,253,0.70);}
 	
+@media screen and (max-width: 1200px){
 
+header {
+	margin-left: 40px;
+	margin-right: 40px;}
+main {
+	margin-left: 40px;
+	margin-right: 40px;}
+}
 
 @media screen and (max-width: 900px){ 
 
@@ -161,18 +153,58 @@ header {
 nav {
 	flex: 1 1 100%;
 	max-width: 100%;
-	height: 85px;}
+	height: 60px;
+	}
 nav h3 {
-	height: 30px;
-	width: 120px;}
+	width: 300px;}
 main {
-	margin-top: 100px;}
+	margin-top: 74px;
+	display: flex;
+	flex-wrap: wrap;}
+.left-section {
+	max-width: 100%;
+	border-right: none;
+	margin-bottom: 0;}	
+.box-headline {
+	height: 85px;
+	margin: 0px;}
+.box-description {
+	margin: 0px;}
+.box-text {
+	margin: 0;}	
 }
 
 @media screen and (max-width: 700px){
 	
 header {
-	margin: 20px;}
+	margin-left: 20px;
+	margin-right: 20px;}
+main {
+	margin-left: 20px;
+	margin-right: 20px;}
 }
 
-
+@media screen and (max-width: 475px){
+	
+h1 {
+	font-size: 40px;}
+h2 {
+	font-size: 16px;}
+h3 {
+	font-size: 14px;}
+h4 {
+	font-size: 13px;}
+h5 {
+	font-size: 12px;}
+p {
+	font-size: 11px;}	
+nav h3 {
+	height: 25px;
+	min-width: 70px;}
+nav{
+	min-width: 200px;}
+main{
+	margin-top: 45px;}
+.box-headline {
+	height: 65px;}
+}
