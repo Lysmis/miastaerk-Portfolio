@@ -17,7 +17,7 @@
 	height: inherit;
 	width: inherit;
 	position: inherit;
-	background-color:#3D2A48;;
+	background-color:#3D2A48;
 	transform:rotate(45deg);
 	border: solid 2px white;
 	padding: 3%;}
@@ -30,6 +30,7 @@
 	position: inherit;
 	margin-top: 200px;
 	margin-left: 100px;}
+
 #portræt-box{
 	/*background-color: aqua*/;
 	width: 300px;
@@ -113,8 +114,11 @@
 @media screen and (max-width: 475px){
 	
 #Index-box{
-	top:590px;}
+	top:550px;}
 #portræt-box{
+	height: 260px;
+	width: 260px;
 	top:210px;
 	left: inherit;}
+
 }
