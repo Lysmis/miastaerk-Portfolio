@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url("Portfolio-style-Header.css");
 /* CSS Document */
 *{
 	margin:0;}
@@ -37,56 +38,17 @@ p {
 	font-style: normal;
 }
 
-/*HEADER*/
-
-header {
-	display:flex;
-	flex-wrap: nowrap;
-	position: sticky;
-	height: 85px;
-	margin: 20px 80px;}
-.logo {
-	display:flex;
-	flex-wrap:nowrap;
-	flex: 1 1 56%;
-	background-color: #3D2A48; /*Dark Purple*/
-	padding: 5px;}
-.logo h1 {
-	color: white; 
-	text-align: left;
-	margin-left: 20px;}
-nav {
-	display:flex;
-	flex: 1 1 32%;
-	min-width: 350px;
-	flex-direction: row;
-	background-color: rgba(255,240,253,0.30);
-	justify-content: space-around;
-	align-items: center;}
-nav h3 {
-	color: white;
-	height: 30px;
-	width: 100px;
-	min-width: 100px;
-	background-color: #3D2A48;
-	margin: 5px; 	
-	padding-top: 10px;
-	border-radius: 4px;
-	text-align: center;}
-.menu-om {
-	margin-left: 20px;}
-.menu-kontakt {
-	margin-right: 20px;}
-
 	
 /*main*/
 
-main {
+.main-background {
 	display: flex;
+	flex: 1 1 100%;
 	flex-wrap: nowrap;
 	flex-direction: row;
 	background-color: rgba(255,240,253,0.30);
 	position: sticky; 
+	Height: 580px; 
 	margin: 20px 80px;}
 section {
 	display:flex;
@@ -129,35 +91,28 @@ section {
 	padding: 20px;
 	color: black;
 	background-color: rgba(255,240,253,0.70);}
-	
-@media screen and (max-width: 1200px){
+.retur-projekter {
+	color: white;
+	height: 30px;
+	background-color: rgba(255,240,253,0.30);
+	margin: 5px; 	
+	padding-top: 10px;
+	padding-right: 10px;
+	border-radius: 4px;
+	text-align: right;}	
 
-header {
-	margin-left: 40px;
-	margin-right: 40px;}
-main {
+
+	
+@media screen and (max-width: 1400px){
+
+.main-background {
 	margin-left: 40px;
 	margin-right: 40px;}
 }
 
-@media screen and (max-width: 900px){ 
+@media screen and (max-width: 1050px){ 
 
-header {
-	display:flex;
-	flex-wrap: wrap}
-.logo {
-	flex: 1 1 100%;
-	max-width: 100%;}
-.logo h1 {
-	text-align: center;}	
-nav {
-	flex: 1 1 100%;
-	max-width: 100%;
-	height: 60px;
-	}
-nav h3 {
-	width: 300px;}
-main {
+.main-background {
 	margin-top: 74px;
 	display: flex;
 	flex-wrap: wrap;}
@@ -172,22 +127,27 @@ main {
 	margin: 0px;}
 .box-text {
 	margin: 0;}	
+
 }
 
+	
 @media screen and (max-width: 700px){
 	
-header {
-	margin-left: 20px;
-	margin-right: 20px;}
-main {
+main{
+	display: flex;
+	flex-direction: row;
+	
+	align-content: center;
+	justify-content: center;
+	}
+.main-background {
+	margin-top:56px;
 	margin-left: 20px;
 	margin-right: 20px;}
 }
 
 @media screen and (max-width: 475px){
 	
-h1 {
-	font-size: 40px;}
 h2 {
 	font-size: 16px;}
 h3 {
@@ -198,13 +158,15 @@ h5 {
 	font-size: 12px;}
 p {
 	font-size: 11px;}	
-nav h3 {
-	height: 25px;
-	min-width: 70px;}
-nav{
-	min-width: 200px;}
 main{
-	margin-top: 45px;}
+	margin-top: 0px;}
+.main-background {
+	margin-top:30px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	Height: 536px; }
 .box-headline {
 	height: 65px;}
+
 }

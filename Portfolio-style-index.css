@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* CSS Document */
+
+#Index-box{
+	position:absolute;
+	left:20%;
+	top: 40px;
+	Height: 500px;
+	Width: 500px;
+	padding-top: 118px;
+	padding-left: 118px;
+	padding-right: 168px;
+	padding-bottom: 168px;
+	/*background: #FF0004;*/}
+#Index-frame {
+	aspect-ratio: 1/1;
+	height: inherit;
+	width: inherit;
+	position: inherit;
+	background-color:#3D2A48;;
+	transform:rotate(45deg);
+	border: solid 2px white;
+	padding: 3%;}
+#Index-canvas {
+	height: inherit;
+	width: inherit;
+	background-color: rgba(255,240,253,0.70);}
+#Index-text{
+	text-align: center;
+	position: inherit;
+	margin-top: 200px;
+	margin-left: 100px;}
+#portræt-box{
+	/*background-color: aqua*/;
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	left:65px;
+	top: 300px;}
+.portræt {
+	height: inherit;
+	width: inherit;
+	position: inherit;
+	transform:rotate(45deg);}
+
+@media screen and (max-width: 1050px){
+
+#Index-box{
+	left: 25%;
+	top:200px;
+	Height: 350px;
+	Width: 350px;
+	padding-top: 78px;
+	padding-left: 78px;
+	padding-right: 118px;
+	padding-bottom: 118px;}
+#Index-text{
+	margin-top: 200px;
+	margin-left: 48px;}
+#Index-text h2{
+	font-size: 20px;}
+#portræt-box{
+	left:65px;
+	top: 230px;}
+}
+
+@media screen and (max-width: 850px){
+	
+#Index-box{
+	left: 29%;
+	top:260px;
+	Height: 315px;
+	Width: 315px;
+	padding-top: 68px;
+	padding-left: 68px;
+	padding-right: 100px;
+	padding-bottom: 100px;}
+#Index-text{
+	margin-top: 200px;
+	margin-left: 56px;}
+#Index-text h2{
+	font-size: 17px;}
+#portræt-box{
+	left:12%;
+	top: 230px;}
+}
+
+@media screen and (max-width: 700px){
+	
+#Index-box{
+	left: 0%;
+	top:600px;
+	Height: 10px;
+	Width: 100%;
+	padding: 0px;}
+#Index-frame{
+	display: none;}
+#Index-text{
+	Display: flex;
+	flex-direction: column;
+	flex: 1 1 100%;
+	min-width: 80%;
+	max-Width: 100%;
+	margin-top: 0px;
+	margin-left:10%;
+	margin-right: 10%;
+	background-color: rgba(255,240,253,0.70);
+	padding: 10px 0px;}
+#portræt-box{
+	left: inherit}
+}
+
+@media screen and (max-width: 475px){
+	
+#Index-box{
+	top:590px;}
+#portræt-box{
+	top:210px;
+	left: inherit;}
+}
